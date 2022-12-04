@@ -10,7 +10,7 @@ I have cute but not too-much animations.
 
 Summary section is also clickable. 
 
-An interesting thing that I have managed to add is the vertical timeline for my resume. Which is also adjustable to different sizes. 
+An interesting thing that I have managed to add is the vertical timeline for my resume. Which is also adjustable to different sizes. I personally liked this part a lot.
 
 The clearest visualization of the image’s change is on the page “Certificate”. 
 Other pictures do change but the change is not that big.
