@@ -2,22 +2,11 @@
 @import url("fontawesome-free/css/fontawesome-all.min.css");
 @import url("framework.css");
 
-/* Rows */
-.row0, .row0 a{}
-.row1, .row1 a{}
-.row2, .row2 a{}
-.row3, .row3 a{}
-.row4, .row4 a{}
-.row5, .row5 a{}
-
-
-/* Header */
 #header{}
 
 #header #logo{margin:22px 0 0 0;}
 
 
-/* Page Intro */
 #pageintro{padding:200px 0 280px;}/* 280px => 80px for #introblocks negative margin */
 
 #pageintro article, #pageintro article p{display:block; max-width:75%; margin:0 auto; text-align:center;}
@@ -25,15 +14,12 @@
 #pageintro .heading{margin-bottom:20px; font-size:4rem;}
 #pageintro footer{margin-top:50px;}
 
-
-/* Content container */
-.container{padding:80px 0;}
-
-/* Content itself*/
-.container .content{}
-
-.sectiontitle{display:block; max-width:55%; margin:0 auto 80px; text-align:center;}
-.sectiontitle *{margin:0;}
+.row0, .row0 a{}
+.row1, .row1 a{}
+.row2, .row2 a{}
+.row3, .row3 a{}
+.row4, .row4 a{}
+.row5, .row5 a{}
 
 .elements{}
 .elements-three li, .elements-four li{margin-bottom:50px;}
@@ -45,14 +31,18 @@
 .elements article .heading{font-size:1.2rem; font-weight:700;}
 .elements article p{margin:0; line-height:normal;}
 
-/* Introblocks */
 #introblocks{display:block; position:relative; margin:-160px 0 130px 0; z-index:1;}/* 160px => 80px + container padding */
 
-/* Services */
+.container{padding:80px 0;}
+
+.container .content{}
+
+.sectiontitle{display:block; max-width:55%; margin:0 auto 80px; text-align:center;}
+.sectiontitle *{margin:0;}
+
 #services{}
 #services .elements article{border-radius:0;}
 
-/* Shout */
 .shout{}
 .shout figure{display:block; max-width:546px;/* same width as the image - contains the caption */}
 .shout figure img{}
@@ -60,7 +50,6 @@
 .shout figure figcaption a{display:block; position:relative; padding:15px; border:solid; border-width:0 1px 1px 1px; }
 .shout figure figcaption a::after{position:absolute; top:12px; right:15px; width:30px; height:30px; line-height:30px; font-family:"Font Awesome\ 5 Free"; font-weight:900; content:"\f105";/* fa-angle-right */ text-align:center; border-radius:50%;}
 
-/* teamed news */
 .team{}
 .team li:last-child{margin-bottom:0;}/* Used when elements stack in small viewports */
 .team figure{display:block; text-align:center;}
@@ -71,15 +60,12 @@
 .team figure strong{display:block; margin-bottom:8px; font-size:1.4rem; font-weight:400;}
 .team figure em{display:block; font-style:normal; font-size:.8rem;}
 
-/* Sidebar */
 .container .sidebar{}
 
 .sidebar .sdb_holder{margin-bottom:50px;}
 .sidebar .sdb_holder:last-child{margin-bottom:0;}
 
 
-/* Footer
---------------------------------------------------------------------------------------------------------------- */
 #footer{padding:80px 0;}
 
 #footer .heading{margin-bottom:50px; font-size:1.2rem;}
@@ -101,14 +87,21 @@
 *, *::before, *::after{transition:all .3s ease-in-out;}
 #mainav form *{transition:none !important;}
 
-/* Navigation
---------------------------------------------------------------------------------------------------------------- */
+
 nav ul, nav ol{margin:0; padding:0; list-style:none;}
 
 #mainav, #breadcrumb, .sidebar nav{line-height:normal;}
 #mainav .drop::after, #mainav li li .drop::after, #breadcrumb li a::after, .sidebar nav a::after{position:absolute; font-family:"Font Awesome\ 5 Free"; font-weight:900; font-size:10px; line-height:10px;}
 
-/* Top Navigation */
+#breadcrumb{padding:150px 0 30px;}
+#breadcrumb ul{margin:0; padding:0; list-style:none; text-transform:uppercase;}
+#breadcrumb li{display:inline-block; margin:0 6px 0 0; padding:0;}
+#breadcrumb li a{display:block; position:relative; margin:0; padding:0 12px 0 0; font-size:12px;}
+#breadcrumb li a::after{top:4px; right:0; content:"\f0da";}
+#breadcrumb li:last-child a{margin:0; padding:0;}
+#breadcrumb li:last-child a::after{display:none;}
+#breadcrumb .heading{margin:0; font-size:2rem;}
+
 #mainav{}
 #mainav ul{text-transform:uppercase;}
 #mainav ul ul{position:absolute; width:180px; text-transform:none; z-index:9999;}
@@ -131,17 +124,7 @@ nav ul, nav ol{margin:0; padding:0; list-style:none;}
 #mainav form select{width:100%; padding:5px; border:none;}
 #mainav form select option{margin:5px; padding:0; border:none;}
 
-/* Breadcrumb */
-#breadcrumb{padding:150px 0 30px;}
-#breadcrumb ul{margin:0; padding:0; list-style:none; text-transform:uppercase;}
-#breadcrumb li{display:inline-block; margin:0 6px 0 0; padding:0;}
-#breadcrumb li a{display:block; position:relative; margin:0; padding:0 12px 0 0; font-size:12px;}
-#breadcrumb li a::after{top:4px; right:0; content:"\f0da";}
-#breadcrumb li:last-child a{margin:0; padding:0;}
-#breadcrumb li:last-child a::after{display:none;}
-#breadcrumb .heading{margin:0; font-size:2rem;}
 
-/* Sidebar Navigation */
 .sidebar nav{display:block; width:100%;}
 .sidebar nav li{margin:0 0 3px 0; padding:0;}
 .sidebar nav a{display:block; position:relative; margin:0; padding:5px 10px 5px 15px; text-decoration:none; border:solid; border-width:0 0 1px 0;}
@@ -151,21 +134,12 @@ nav ul, nav ol{margin:0; padding:0; list-style:none;}
 .sidebar nav ul ul ul a{padding-left:55px;}
 .sidebar nav ul ul ul a::after{left:45px;}
 
-/* Pagination */
 .pagination{display:block; width:100%; text-align:center; clear:both;}
 .pagination li{display:inline-block; margin:0 2px 0 0;}
 .pagination li:last-child{margin-right:0;}
 .pagination a, .pagination strong{display:block; padding:8px 11px; border:1px solid; background-clip:padding-box; font-weight:normal;}
 
-/* Back to Top */
-#backtotop{z-index:999; display:inline-block; position:fixed; visibility:hidden; bottom:20px; right:20px; width:36px; height:36px; line-height:36px; font-size:16px; text-align:center; opacity:.2;}
-#backtotop i{display:block; width:100%; height:100%; line-height:inherit;}
-#backtotop.visible{visibility:visible; opacity:.5;}
-#backtotop:hover{opacity:1;}
 
-
-/* Tables
---------------------------------------------------------------------------------------------------------------- */
 table, th, td{border:1px solid; border-collapse:collapse; vertical-align:top;}
 table, th{table-layout:auto;}
 table{width:100%; margin-bottom:15px;}
@@ -173,15 +147,16 @@ th, td{padding:5px 8px;}
 td{border-width:0 1px;}
 
 
-/* Gallery
---------------------------------------------------------------------------------------------------------------- */
+#backtotop{z-index:999; display:inline-block; position:fixed; visibility:hidden; bottom:20px; right:20px; width:36px; height:36px; line-height:36px; font-size:16px; text-align:center; opacity:.2;}
+#backtotop i{display:block; width:100%; height:100%; line-height:inherit;}
+#backtotop.visible{visibility:visible; opacity:.5;}
+#backtotop:hover{opacity:1;}
+
 #gallery{display:block; width:100%; margin-bottom:50px;}
 #gallery figure figcaption{display:block; width:100%; clear:both;}
 #gallery li{margin-bottom:30px;}
 
 
-/* Font Awesome Social Icons
---------------------------------------------------------------------------------------------------------------- */
 .faico{margin:0; padding:0; list-style:none;}
 .faico li{display:inline-block; margin:8px 5px 0 0; padding:0; line-height:normal;}
 .faico li:last-child{margin-right:0;}
@@ -197,8 +172,6 @@ td{border-width:0 1px;}
 .faicon-twitter:hover{background-color:#00ACEE;}
 .faicon-vk:hover{background-color:#4E658E;}
 
-/* Colours
---------------------------------------------------------------------------------------------------------------- */
 body{color:#A5A6AA; background-color:#282E39;}
 a{color:#557A95;}
 a:active, a:focus{background:transparent !important;}/* IE10 + 11 Bugfix - prevents grey background */
@@ -225,7 +198,6 @@ input:focus, textarea:focus, *:required:focus{border-color:#557A95 !important;}
 .logoname::first-letter, .logoname span{color:#97BDAB;}
 
 
-/* Rows */
 .row0, .row0 a{}
 .row1{color:#FFFFFF; background-color:#000000;}
 .row2{color:#474747; background-color:#F4F4F4;}
@@ -235,19 +207,29 @@ input:focus, textarea:focus, *:required:focus{border-color:#557A95 !important;}
 .coloured{color:#FFFFFF; background-color:#557A95;}
 
 
-/* Header */
 #header #logo a{color:inherit;}
 
 
-/* Page Intro */
 #pageintro{color:#FFFFFF;}
 
 
-/* Content Area */
 .elements article{color:#474747; background-color:#FFFFFF; box-shadow:0px 0px 15px rgba(0,0,0,.3);}
 .elements article:hover{color:#FFFFFF; background-color:#557A95;}/* Default */
 .elements article a i{color:#FFFFFF; background-color:#557A95;}/* Default */
 .elements article:hover a i{color:#557A95; background-color:#FFFFFF;}/* Default */
+
+
+.shout figure figcaption a{color:inherit; background-color:inherit; border-color:#D7D7D7;}
+.shout figure:hover figcaption a, .shout figure figcaption a::after{color:#FFFFFF; background-color:#557A95; border-color:#557A95;}
+.shout figure:hover figcaption a::after{color:#557A95; background-color:#FFFFFF;}
+
+.team figure figcaption{color:#474747; background-color:#FFFFFF; border-color:#D7D7D7;}
+
+#latest article .meta, #latest article .meta *{color:#FFFFFF; background-color:#557A95;}
+#latest article .excerpt{border-color:#D7D7D7;}
+
+#footer .heading{color:#FFFFFF;}
+#footer hr, #footer .borderedbox, #footer .linklist li{border-color:rgba(255,255,255,.1);}
 
 #introblocks .elements li article{color:#FFFFFF; background-color:#557A95;}/* Blue */
 #introblocks .elements li article a i{color:#7395AE; background-color:#FFFFFF;}/* Blue */
@@ -260,21 +242,6 @@ input:focus, textarea:focus, *:required:focus{border-color:#557A95 !important;}
 #introblocks .elements li:nth-child(4) article, #introblocks .elements li:nth-child(4) article:hover a i{background-color:#97BDAB;}/* Green */
 #introblocks .elements li:nth-child(4) article a i{color:#97BDAB;}/* Green */
 
-.shout figure figcaption a{color:inherit; background-color:inherit; border-color:#D7D7D7;}
-.shout figure:hover figcaption a, .shout figure figcaption a::after{color:#FFFFFF; background-color:#557A95; border-color:#557A95;}
-.shout figure:hover figcaption a::after{color:#557A95; background-color:#FFFFFF;}
-
-.team figure figcaption{color:#474747; background-color:#FFFFFF; border-color:#D7D7D7;}
-
-#latest article .meta, #latest article .meta *{color:#FFFFFF; background-color:#557A95;}
-#latest article .excerpt{border-color:#D7D7D7;}
-
-/* Footer */
-#footer .heading{color:#FFFFFF;}
-#footer hr, #footer .borderedbox, #footer .linklist li{border-color:rgba(255,255,255,.1);}
-
-
-/* Navigation */
 #mainav li a{color:inherit;}
 #mainav .active a, #mainav a:hover, #mainav li:hover > a{color:#557A95; background-color:inherit;}
 #mainav li li a, #mainav .active li a{color:#FFFFFF; background-color:#7395AE; border-color:rgba(151,169,189,.5);/* #557A95 */}
@@ -284,22 +251,18 @@ input:focus, textarea:focus, *:required:focus{border-color:#557A95 !important;}
 #breadcrumb a{color:inherit; background-color:inherit;}
 #breadcrumb li:last-child a{color:#557A95;}
 
-.container .sidebar nav a{color:inherit; border-color:#D7D7D7;}
-.container .sidebar nav a:hover{color:#557A95;}
+
 
 .pagination a, .pagination strong{border-color:#D7D7D7;}
 .pagination .current *{color:#FFFFFF; background-color:#557A95;}
 
 #backtotop{color:#FFFFFF; background-color:#557A95;}
+.container .sidebar nav a{color:inherit; border-color:#D7D7D7;}
+.container .sidebar nav a:hover{color:#557A95;}
 
-
-/* Media Queries
---------------------------------------------------------------------------------------------------------------- */
 @-ms-viewport{width:device-width;}
 
 
-/* Max Wrapper Width - Laptop, Desktop etc.
---------------------------------------------------------------------------------------------------------------- */
 @media screen and (min-width:1140px){
 	.hoc{max-width:1140px;}
 }
@@ -309,8 +272,6 @@ input:focus, textarea:focus, *:required:focus{border-color:#557A95 !important;}
 }
 
 
-/* Mobile Devices
---------------------------------------------------------------------------------------------------------------- */
 @media screen and (max-width:978px){
 	.hoc{max-width:90%;}
 
@@ -368,8 +329,6 @@ input:focus, textarea:focus, *:required:focus{border-color:#557A95 !important;}
 }
 
 
-/* Other
---------------------------------------------------------------------------------------------------------------- */
 @media screen and (max-width:650px){
 	.scrollable{display:block; width:100%; margin:0 0 30px 0; padding:0 0 15px 0; overflow:auto; overflow-x:scroll;}
 	.scrollable table{margin:0; padding:0; white-space:nowrap;}
