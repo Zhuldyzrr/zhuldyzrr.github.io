@@ -15,3 +15,4 @@ An interesting thing that I have managed to add is the vertical timeline for my 
 The clearest visualization of the image’s change is on the page “Certificate”. 
 Other pictures do change but the change is not that big.
 
+I have used references from boostrap, from frameworks, fonts, color palettes available on google. 
